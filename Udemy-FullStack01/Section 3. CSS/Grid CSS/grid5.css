@@ -1,0 +1,19 @@
+.container{
+    border: 1px solid blue;
+    padding: 10px;
+    display: grid;
+    /* grid-template: repeat(3, 100px) / repeat(3, 100px); */
+    /* grid-template: 1fr/ repeat(auto-fill, minmax(200px,1fr)); */
+    grid-template: 1fr/ repeat(auto-fit, minmax(200px,1fr));
+    height: 500px;
+    grid-gap: 3px;
+
+/*     justify-content: start/center/end/space-around/space-between/space-evenly;
+    justify-content: space-evenly;
+    justify-content: space-between; */
+}
+
+.box{
+    background-color: orange; 
+    border: 1px solid blue;
+} 
