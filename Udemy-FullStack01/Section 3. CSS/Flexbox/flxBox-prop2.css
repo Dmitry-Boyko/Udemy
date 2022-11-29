@@ -1,0 +1,12 @@
+.flexContainer{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.box{
+    border: 1px solid blue;
+    flex-basis: 60%;
+    flex-grow: 0;
+    flex-shrink: 0;
+} 
+

@@ -1,0 +1,29 @@
+.flexContainer{
+    background-color: orange;
+    height: 200px;
+    display: flex;
+    /* flex-flow: row wrap; */
+}
+
+.item{
+    width: 50px;
+    background-color: pink;
+    border: 1px solid blue;
+} 
+
+.item1{
+    height: 50px;
+    align-self: center;
+}
+
+.item2{
+    height: 75px;
+    align-self: flex-end;
+}
+
+.item3{
+   /*  height: 150px; */
+    align-self: stretch;
+}
+
+
