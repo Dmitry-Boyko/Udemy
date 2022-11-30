@@ -1,3 +1,9 @@
+/* General changes */
+h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+
 .navbar{
     border-bottom: cadetblue solid 3px;
 }
@@ -11,7 +17,7 @@ font-size: 30;
     text-transform: uppercase;
 }
 
-.nav-link:hover{
+.nav-link:hover{ 
     color: cadetblue !important;
 }
 
@@ -36,4 +42,14 @@ cursor: pointer;
 
 .btn-outline-secondary:hover{
     background-color: cadetblue;
+}
+
+#features i{
+    color: cadetblue;
+    cursor: pointer;
+}
+
+#features h3:hover{
+    color: cadetblue;
+    cursor: pointer;
 }
