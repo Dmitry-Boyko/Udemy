@@ -1,0 +1,16 @@
+.container{
+    border: 1px solid blue;
+    padding: 10px;
+    display: grid;
+    grid-template: 100px 200px 300px / repeat(3, 1fr);
+    grid-gap: 3px;
+    justify-items: stretch;
+    justify-items: end;
+    align-items: center;
+    place-items: start end; 
+}
+
+.box{
+    background-color: orange;
+    border: 1px solid blue;
+} 

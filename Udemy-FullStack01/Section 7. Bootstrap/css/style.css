@@ -1,0 +1,55 @@
+/* General changes */
+h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar{
+    border-bottom: cadetblue solid 3px;
+}
+
+.navbar  .navbar-brand{
+color: cadetblue !important;
+font-size: 30;
+}
+
+.nav-link{
+    text-transform: uppercase;
+}
+
+.nav-link:hover{ 
+    color: cadetblue !important;
+}
+
+#header{
+    background: url('../images/apps-to-change-background-smartphone-table.webp') no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#header .overlay{
+    background-color: rgba(20, 0, 20, .4);
+    height: 100vh;
+}
+
+h1{
+    margin-top: 20px;
+}
+
+.btn-outline-secondary {
+cursor: pointer;
+}
+
+.btn-outline-secondary:hover{
+    background-color: cadetblue;
+}
+
+#features i{
+    color: cadetblue;
+    cursor: pointer;
+}
+
+#features h3:hover{
+    color: cadetblue;
+    cursor: pointer;
+}

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- Bootstrap CSS -->
+    <!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">  
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/116306c33f.js" crossorigin="anonymous"></script>
+</head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class = "navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class = "navbar-brand" href="#">My Gallery</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>      
+    </nav>
+    <!-- Navbar Section end -->
+
+    <!-- Header Section -->
+    <header id = "header">
+        <div class="overlay">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col">
+                        <h1 class="display-4">Bootstrap Responsive Web Page</h1>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida.</p>
+                        <button type="button" class="btn btn-outline-secondary px-3" name="button" >Action</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Features Section -->
+    <section id="features" class="pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <i class="fa-solid fa-eye fa-3x"></i>
+                    <h3 class="mt-3">Quick Observation</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col text-center">
+                    <i class="fa-solid fa-bell fa-3x"></i>
+                    <h3 class="mt-3">Call the bell</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col text-center">
+                    <i class="fa-solid fa-bookmark fa-3x"></i>
+                    <h3 class="mt-3">Quick Bookmark</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My work -->
+    <section id="work">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3>My Work</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="col-md-6 text-center mx-auto">
+                    <button  type="button" name="button" class="btn btn-secondary px-3" data-toggle="modal" data-target="#firstModal">Open</button>
+                </div>
+                <div class=" footer-bottom pt-5"></div>
+            </div>
+        </div>
+    </section>
+
+    <div id="firstModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                    <h3 class="modal-title">Modal Title</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&times</button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal Body Content</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="button" name="button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>  
+</body>
+</html>
