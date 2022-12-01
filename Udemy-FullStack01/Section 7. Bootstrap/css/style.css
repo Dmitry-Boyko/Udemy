@@ -58,3 +58,16 @@ cursor: pointer;
     color: cadetblue;
     cursor: pointer;
 }
+
+/* Work section */
+#work{
+    background: url(../images/modal.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#work i{
+    color: cadetblue;
+}
