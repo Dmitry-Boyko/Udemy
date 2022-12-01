@@ -11,6 +11,7 @@ h3{
 .navbar  .navbar-brand{
 color: cadetblue !important;
 font-size: 30;
+margin-left: 30px;
 }
 
 .nav-link{
@@ -61,7 +62,7 @@ cursor: pointer;
 
 /* Work section */
 #work{
-    background: url(../images/modal.jpg);
+    background: url(../images/cells03.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -101,4 +102,42 @@ cursor: pointer;
 .imgText{
     position: absolute;
     color: white;
+}
+
+#footer{
+    background: #444;
+    width: 100%;
+}
+
+#footer .container{
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social{
+    margin: 20px 0;
+}
+
+.social a{
+    color: white;
+    margin-right: 25px;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.content h2{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+#footer .container .content{
+    padding: 10px 20px;
+    color: white;
+}
+
+.second{
+    margin-left: 120px;
 }
