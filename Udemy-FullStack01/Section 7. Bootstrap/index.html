@@ -6,6 +6,7 @@
     <title>Bootstrap demo</title>
     <!-- Bootstrap CSS -->
     <!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">  
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/116306c33f.js" crossorigin="anonymous"></script>
@@ -76,15 +77,17 @@
     </section>
 
     <!-- My work -->
-    <section id="work">
+    <section id="work" class="py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h3>My Work</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <p class=""text-muted>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </div>
                 <div class="col-md-6 text-center mx-auto">
-                    <button  type="button" name="button" class="btn btn-secondary px-3" data-toggle="modal" data-target="#firstModal">Open</button>
+                    <!-- <button  type="button" name="button" class="btn btn-secondary px-3" data-toggle="modal" data-target="#firstModal">Open</button> -->
+                    <a href="#" class="video" data-video="/images/sample-mp4-file.mp4" 
+                    data-toggle="modal" data-target="firstModal"><i class="fas fa-play fa-3x"></i></a>
                 </div>
                 <div class=" footer-bottom pt-5"></div>
             </div>
@@ -99,11 +102,15 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&times</button>
                 </div>
                 <div class="modal-body">
+                <!-- This is for button!
                     <p>Modal Body Content</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="button" name="button" data-bs-dismiss="modal">Close</button>
-                </div>
+                </div> -->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <iframe src="/images/sample-mp4-file.mp4" width="300px" height="auto"></iframe>
+            </div>
             </div>
         </div>
     </div>
