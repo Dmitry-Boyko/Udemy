@@ -4,12 +4,16 @@ h3{
     font-weight: bold;
 }
 
-.navbar{
-    border-bottom: cadetblue solid 3px;
+html{
+    scroll-behavior: smooth;
 }
 
-.navbar  .navbar-brand{
-color: cadetblue !important;
+/* .navbar{
+    border-bottom: cadetblue solid 3px;
+} */
+
+.navbar-brand{
+/* color: cadetblue !important; */
 font-size: 30;
 margin-left: 30px;
 }
@@ -28,14 +32,14 @@ margin-left: 30px;
     height: 100vh;
 }
 
-#header .overlay{
+/* #header .overlay{
     background-color: rgba(20, 0, 20, .4);
     height: 100vh;
-}
+} */
 
 h1{
     margin-top: 20px;
-    color: rgb(117, 102, 129);
+    color: rgb(240, 240, 240);
 }
 
 .btn-outline-secondary {
@@ -140,4 +144,42 @@ cursor: pointer;
 
 .second{
     margin-left: 120px;
+}
+
+@media screen and (max-with 1200px)
+{
+    #header{
+        background-size: 1200px 100hv;
+    }
+}
+
+@media screen and (max-with 992px)
+{
+    #header{
+        background-size: 990px 100hv;
+    }
+}
+
+@media screen and (max-with 768px)
+{
+    #header{
+        background-size: 760px 100hv;
+    }
+    .historyImage{
+        margin-left: 0;
+        margin-top: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-with 576px)
+{
+    #header{
+        background-size: 570px 100hv;
+    }
+    .historyImage{
+        margin-left: 0;
+        margin-top: 0;
+        text-align: center;
+    }
 }
