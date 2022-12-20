@@ -1,9 +1,15 @@
 import React from 'react';
+import northPic from './images/north.jpg';
+import southPic from './images/south.jpg';
 
-const HemisphereDisplay = () => {
+const HemisphereDisplay = ({ latitude }) => {
+
+    const hemisphere = latitude > 0 ? 'North hemisphere' : 'South hemisphere';
+    const picture = latitude > 0 ? northPic : southPic;
+
     return(
-        <div>
-            Hey, you are in North hemisphere
+        <div src={picture} alt="" >
+            { hemisphere }
         </div>
     )
 }
