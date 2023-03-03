@@ -1,5 +1,5 @@
 
-create-react-app <app-name>>
+npx cdcreate-react-app <app-name>>
 
 yarn start : Starts the development server.
 
