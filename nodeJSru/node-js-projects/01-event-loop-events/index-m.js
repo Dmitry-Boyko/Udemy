@@ -1,28 +1,36 @@
 const fs = require('fs')
 const dns = require('dns')
 
-const timeStamp = () =>  performance.now().toFixed(2)
+const timeInfo = (text) => { 
+  console.log(text, performance.now().toFixed(2) )
+}
 
 console.log('Program start')
 // Timeout events
-setTimeout(() => console.log('Timeout 1', timeStamp()), 0)
+setTimeout(() => timeInfo('Timeout 1', ), 0)
 setTimeout(() => {
-  process.nextTick(() => console.log('Next tick 2', timeStamp()))
-  console.log('Timeout 2', timeStamp())
-}, 10)
+  process.nextTick(() => timeInfo('Next tick 2'))
+  timeInfo('Timeout 2')
+}, 100)
 // Close event
-fs.writeFile('./test.txt', 'Hello Node.js', () => console.log('File written', timeStamp()))
+fs.writeFile('./test.txt', 'Hello Node.js', () => timeInfo('File written'))
 // Promise event
-Promise.resolve().then(() => console.log('Promise 1', timeStamp()))
+Promise.resolve().then(() => timeInfo('Promise 1'))
 // Next Tick event
-process.nextTick(() => console.log('Next tick 1', timeStamp()))
+process.nextTick(() => timeInfo('Next tick 1'))
 // Set Immidiate event (Check)
-setImmediate(() => console.log('Immidiate 1', timeStamp()))
+setImmediate(() => timeInfo('Immidiate 1'))
+// Intervals
+let intervalCount = 0
+const intervalId = setInterval(() => {
+  timeInfo(`Interval ${intervalCount += 1}`)
+  if (intervalCount === 2) clearInterval(intervalId)
+}, 50)
 // I/O Events
 dns.lookup('google.com', (err, address, family) => {
-  console.log('DNS 1 Google', address, timeStamp())
-  Promise.resolve().then(() => console.log('Promise 2', timeStamp()))
-  process.nextTick(() => console.log('Next tick 3', timeStamp()))
+  timeInfo('DNS 1 Google', address)
+  Promise.resolve().then(() => timeInfo('Promise 2'))
+  process.nextTick(() => timeInfo('Next tick 3'))
 })
 
 console.log('Program end')
