@@ -5,3 +5,4 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+# .aut/ should be added. now commented for the learning

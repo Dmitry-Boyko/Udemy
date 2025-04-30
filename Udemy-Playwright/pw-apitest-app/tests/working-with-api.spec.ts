@@ -14,7 +14,7 @@ test('has title', async ({ page }) => {
   await expect(page.locator('.navbar-brand')).toHaveText('conduit');
 });
 
-test('create the article', async({ page, request }) => {
+test('create the article', async({ request }) => {
   const response = await request.post('https://conduit-api.bondaracademy.com/api/users/login', {
     data:{
       "user":{"email":"test-user2025@test.com", "password":"12345"}
