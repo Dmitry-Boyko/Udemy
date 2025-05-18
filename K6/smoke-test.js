@@ -21,6 +21,9 @@ export default function() {
     For the smoke test k6 using 1 to 3 virtual user (1 vu) amd one server (Minimal load) to establish baseline performance values.
     As a result we can see 'Baseline value'
 
+    In the context of a smoke test using k6, how should throughput and duration typically be configured? =>
+      Low throughput, brief duration.
+
 
  *   █ TOTAL RESULTS
 
