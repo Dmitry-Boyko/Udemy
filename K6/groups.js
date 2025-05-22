@@ -1,6 +1,7 @@
 // lesson 33
 import http from 'k6/http';
 import { sleep, group, check } from 'k6';
+import { baseUrl } from './urls/urls.ts';
 
 export const options = {
     thresholds: {
@@ -13,7 +14,7 @@ export const options = {
 export default function () {
 
     group('Main page', function () {
-        let res = http.get('https://quickpizza.grafana.com/test.k6.io/');
+        let res = http.get(baseUrl);
         check(res, { 'status is 200': (r) => r.status === 200 });
     
         group('Assets', function () {
@@ -24,7 +25,7 @@ export default function () {
 
 
     group('News page', function () {
-        http.get('https://quickpizza.grafana.com/test.k6.io/news.php');
+        http.get(newsUrl);
     });
 
     sleep(1);
