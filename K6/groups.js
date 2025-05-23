@@ -1,4 +1,4 @@
-// lesson 33
+// lesson 33-35
 import http from 'k6/http';
 import { sleep, group, check } from 'k6';
 import { baseUrl } from './urls/urls.ts';
