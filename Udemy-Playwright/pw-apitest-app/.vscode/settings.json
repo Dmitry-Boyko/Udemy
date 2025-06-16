@@ -1,5 +1,0 @@
-{
-  "playwright.runGlobalSetupOnEachRun": true,
-  "playwright.reuseBrowser": true,
-  "playwright.showTrace": false
-}
