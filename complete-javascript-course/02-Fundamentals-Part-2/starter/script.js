@@ -50,5 +50,4 @@ const yaerUntilRetirement = (birthYear) => {
   const retirement = 65 - age;
   return retirement;
 };
-
 console.log(yaerUntilRetirement(1969));
