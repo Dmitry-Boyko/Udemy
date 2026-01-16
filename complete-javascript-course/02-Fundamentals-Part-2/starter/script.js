@@ -86,18 +86,39 @@
 // console.log(yaerUntilRetirement(1970, "Mike"));
 
 // Array
-const friends = ["Michael", "Tyler", "Joe", "Silvia"];
+// const friends = ["Michael", "Tyler", "Joe", "Silvia"];
 
-console.log(friends.indexOf("Tyler"));
+// console.log(friends.indexOf("Tyler"));
 
-for (let i = 3; i < 2; i++) {
-  const result = friends.shift();
-  console.log(`Removed: ${result}`);
-  console.log(`We're keeps only: ${friends}`);
+// for (let i = 3; i < 2; i++) {
+//   const result = friends.shift();
+//   console.log(`Removed: ${result}`);
+//   console.log(`We're keeps only: ${friends}`);
+// }
+
+// for (let i = 0; i < 2; i++) {
+//   const result = friends.pop();
+//   console.log(`Removed: ${result}`);
+//   console.log(`We're keeps only: ${friends}`);
+// }
+
+// let input = prompt("Enter bill amount: ");
+// while (!/^\d+(\.\d+)?$/.test(input)) {
+//   input = prompt("Digits only. Enter bill amount: ");
+// }
+// const bill = Number(input);
+// console.log(`Bill: ${bill}`);
+
+const bills = [125, 555, 44];
+let total = 0;
+
+for (let bill of bills) {
+  const tip = bill <= 30 ? bill * 0.15 : bill * 0.2;
+  const finalAmount = bill + tip;
+
+  console.log(`Bill + tip: ${finalAmount}`);
+
+  total += finalAmount; // add to total
 }
 
-for (let i = 0; i < 2; i++) {
-  const result = friends.pop();
-  console.log(`Removed: ${result}`);
-  console.log(`We're keeps only: ${friends}`);
-}
+console.log("Total of all bills + tips:", total);
