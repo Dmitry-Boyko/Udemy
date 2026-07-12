@@ -5,11 +5,11 @@ export const options = {
   stages: [
     {
       duration: '10s', // actual data 5m
-      target: 1000 //total users - actual data (Hight load - upper average) !!! // increace number slow
+      target: 1000 //total users - actual data (High load - upper average) !!! // increace number slow
     },
     {
       duration: '30s', // actual data: 30m
-      target: 1000 //total users - actual data (Hight load - upper average) !!!
+      target: 1000 //total users - actual data (High load - upper average) !!!
     },
     {
       duration: '10s',  // actual data 5m
